@@ -1,7 +1,8 @@
 import requests
 import openpyxl
 import pprint
-
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 
 #读取excel表数据
 def ReadData(filename,sheetlname):
